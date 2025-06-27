@@ -1,4 +1,4 @@
-module src/cmd/server/main.go
+module github.com/sumayu/testovoe
 
 go 1.23.0
 
