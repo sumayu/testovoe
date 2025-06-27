@@ -3,6 +3,8 @@
 cd src/cmd/server 
  go run main.go
  http запросы 
- curl -X POST http://localhost:8080/task/create создать 
-curl http://localhost:8080/task/info запрос результата работы
-curl -X DELETE http://localhost:8080/task/delete удалить
+ curl -X POST http://localhost:8080/task/create создать таску
+curl http://localhost:8080/task/info запрос результата работы таски
+curl -X DELETE http://localhost:8080/task/delete удалить таску
+
+таска - абстракция какой-то работы. Лицом таски является контекс который живет 5 минут (после завершения контекста выводится статус 200)
